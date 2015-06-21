@@ -64,6 +64,24 @@ img {
 <div id="humanactivityanalysis" class="section level1">
 <h1>HumanActivityAnalysis</h1>
 <p>Getting and Cleaning Data Course Project</p>
+<div id="what-is-in-the-code" class="section level2">
+<h2>What is in the code</h2>
+<div id="data-for-analysis" class="section level3">
+<h3>Data for analysis</h3>
+<p>The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:</p>
+<p><a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" class="uri">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a></p>
+</div>
+<div id="script-does-the-following." class="section level3">
+<h3>Script does the following.</h3>
+<ol style="list-style-type: decimal">
+<li>Merges the training and the test sets to create one data set.</li>
+<li>Extracts only the measurements on the mean and standard deviation for each measurement.</li>
+<li>Uses descriptive activity names to name the activities in the data set</li>
+<li>Appropriately labels the data set with descriptive variable names.</li>
+<li>From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.</li>
+</ol>
+</div>
+</div>
 <div id="prerequisites" class="section level2">
 <h2>Prerequisites</h2>
 <p>Script that was placed in file “run_analysis.R” uses the following libraries: – stringr – plyr – dplyr</p>
@@ -73,11 +91,12 @@ img {
 <h2>Running the script</h2>
 <p>If subdirectory does not exists script reports message text “You need to place files on to directory”UCI HAR Dataset&quot; and stops the execution.</p>
 <p>Execute commands from RStudio or RGui &gt; source(“run_analysis.R”) &gt; run_analysis()</p>
-<p>If files exists, after successful execution script places file “tidy_data_set.txt” in subdirectory “UCI HAR Dataset”. Script repot messages text after that: Data was written to the file ./UCI HAR Dataset/tidy_data_set.txt</p>
+<p>If files exists, after successful execution script places file “tidy_data_set.txt” in subdirectory “UCI HAR Dataset”. Script repot messages text after that: Data was written to the file</p>
+<p>“./UCI HAR Dataset/tidy_data_set.txt”</p>
 </div>
 <div id="opening-cleared-data-file" class="section level2">
 <h2>Opening cleared data file</h2>
-<p>You can use the following line to open file in RStudio to your local table (example)</p>
+<p>You can use the following line to open file in RStudio to your local table (_italic_example)</p>
 <blockquote>
 <p>subDir &lt;- “./UCI HAR Dataset” targetFileName &lt;- “tidy_data_set.txt” d5&lt;-read.table( str_c(subDir, targetFileName, sep = “/”), header = TRUE, sep = &quot; “)</p>
 </blockquote>
