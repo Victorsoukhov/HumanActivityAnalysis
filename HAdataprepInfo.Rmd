@@ -1,7 +1,7 @@
 ---
 title: "Human Activity Data preparation description"
 author: "Victor Soukhov"
-date: "21 θώνÿ 2015 γ."
+date: "21 june 2015 γ."
 output: html_document
 ---
 
