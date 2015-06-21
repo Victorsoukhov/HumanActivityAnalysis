@@ -28,8 +28,10 @@ Place the source file in that directory.
 If subdirectory does not exists script reports message text "You need to place files on to directory "UCI HAR Dataset" and stops the execution.
 
 Execute commands from RStudio or RGui
-> source("run_analysis.R")
-> run_analysis()
+```{r}
+source("run_analysis.R")
+run_analysis()
+```
 
 If files exists, after successful  execution script places file "tidy_data_set.txt" in subdirectory 
 "UCI HAR Dataset".
@@ -40,9 +42,9 @@ Data was written to the file
 
 ##Opening cleared data file
 You can use the following line to open file in RStudio to your local table (_italic_example)
-
->subDir <- "./UCI HAR Dataset"
->targetFileName <- "tidy_data_set.txt"
->d5<-read.table( str_c(subDir, targetFileName, sep = "/"), header = TRUE, sep = " ")
-
+```{r}
+subDir <- "./UCI HAR Dataset"
+targetFileName <- "tidy_data_set.txt"
+d5<-read.table( str_c(subDir, targetFileName, sep = "/"), header = TRUE, sep = " ")
+```
 

@@ -90,16 +90,18 @@ img {
 <div id="running-the-script" class="section level2">
 <h2>Running the script</h2>
 <p>If subdirectory does not exists script reports message text “You need to place files on to directory”UCI HAR Dataset&quot; and stops the execution.</p>
-<p>Execute commands from RStudio or RGui &gt; source(“run_analysis.R”) &gt; run_analysis()</p>
+<p>Execute commands from RStudio or RGui</p>
+<pre class="{r}"><code>source(&quot;run_analysis.R&quot;)
+run_analysis()</code></pre>
 <p>If files exists, after successful execution script places file “tidy_data_set.txt” in subdirectory “UCI HAR Dataset”. Script repot messages text after that: Data was written to the file</p>
 <p>“./UCI HAR Dataset/tidy_data_set.txt”</p>
 </div>
 <div id="opening-cleared-data-file" class="section level2">
 <h2>Opening cleared data file</h2>
 <p>You can use the following line to open file in RStudio to your local table (_italic_example)</p>
-<blockquote>
-<p>subDir &lt;- “./UCI HAR Dataset” targetFileName &lt;- “tidy_data_set.txt” d5&lt;-read.table( str_c(subDir, targetFileName, sep = “/”), header = TRUE, sep = &quot; “)</p>
-</blockquote>
+<pre class="{r}"><code>subDir &lt;- &quot;./UCI HAR Dataset&quot;
+targetFileName &lt;- &quot;tidy_data_set.txt&quot;
+d5&lt;-read.table( str_c(subDir, targetFileName, sep = &quot;/&quot;), header = TRUE, sep = &quot; &quot;)</code></pre>
 </div>
 </div>
 
