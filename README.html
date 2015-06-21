@@ -94,11 +94,13 @@ img {
 <pre class="{r}"><code>source(&quot;run_analysis.R&quot;)
 run_analysis()</code></pre>
 <p>If files exists, after successful execution script places file “tidy_data_set.txt” in subdirectory “UCI HAR Dataset”. Script repot messages text after that: Data was written to the file</p>
+<blockquote>
 <p>“./UCI HAR Dataset/tidy_data_set.txt”</p>
+</blockquote>
 </div>
 <div id="opening-cleared-data-file" class="section level2">
 <h2>Opening cleared data file</h2>
-<p>You can use the following line to open file in RStudio to your local table (_italic_example)</p>
+<p>You can use the following line to open file in RStudio to your local table (example)</p>
 <pre class="{r}"><code>subDir &lt;- &quot;./UCI HAR Dataset&quot;
 targetFileName &lt;- &quot;tidy_data_set.txt&quot;
 d5&lt;-read.table( str_c(subDir, targetFileName, sep = &quot;/&quot;), header = TRUE, sep = &quot; &quot;)</code></pre>

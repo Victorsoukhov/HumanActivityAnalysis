@@ -38,10 +38,10 @@ If files exists, after successful  execution script places file "tidy_data_set.t
 Script repot messages text after that: 
 Data was written to the file
 
-"./UCI HAR Dataset/tidy_data_set.txt"
+>"./UCI HAR Dataset/tidy_data_set.txt"
 
 ##Opening cleared data file
-You can use the following line to open file in RStudio to your local table (_italic_example)
+You can use the following line to open file in RStudio to your local table (example)
 ```{r}
 subDir <- "./UCI HAR Dataset"
 targetFileName <- "tidy_data_set.txt"
